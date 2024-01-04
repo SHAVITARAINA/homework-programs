@@ -1,12 +1,15 @@
-#include <stdio.h>
+//Write a program to add 10 consecutive numbers starting from 1 using while loop
 
-int main() {
-    int number = 1;
-    while (number <= 20) {
-        if (number % 2 != 0) {
-            printf("%d\n", number);
-        }
-        number++;
+#include <stdio.h>
+int main() 
+{
+    int n = 1,sum = 0,count = 0; 
+    while(count<10) 
+    {
+        sum+=n;
+        n++; 
+        count++;
     }
+    printf("The sum of the 10 consecutive numbers starting from 1 is: %d\n", sum);
     return 0;
 }
